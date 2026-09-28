@@ -19,7 +19,9 @@
     --white: #ffffff;
     --border: #dddd d8;
 }
-
+h1{
+    color: #45f115;
+}
 body {
     font-family: "DM Sans", sans-serif;
     background: var(--bg);

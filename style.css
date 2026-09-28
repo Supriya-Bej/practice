@@ -137,7 +137,7 @@ a {
     border-radius: 30px;
     font-size: 12px;
     margin-bottom: 25px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .status-dot {
@@ -694,7 +694,7 @@ a {
     margin: 4px 0 12px;
 }
 
-.timeline-content > p:last-child {
+.timeline-content>p:last-child {
     color: #777;
     font-size: 14px;
 }
@@ -737,7 +737,7 @@ a {
     color: var(--green);
 }
 
-.contact-left > p {
+.contact-left>p {
     color: #aaa;
     max-width: 500px;
     margin: 25px 0;
@@ -882,6 +882,105 @@ footer {
 
     .section-heading {
         margin-bottom: 40px;
+    }
+
+    /* =========================
+   ACHIEVEMENTS
+========================= */
+
+    .achievements-section {
+        background: white;
+    }
+
+    .achievements-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .achievement-card {
+        position: relative;
+        display: flex;
+        gap: 25px;
+        padding: 30px;
+        border: 1px solid #deded8;
+        border-radius: 18px;
+        background: var(--bg);
+        overflow: hidden;
+        transition: 0.3s ease;
+    }
+
+    .achievement-card:hover {
+        transform: translateY(-7px);
+        border-color: var(--green);
+        box-shadow: 9px 9px 0 var(--light-green);
+    }
+
+    .achievement-number {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 45px;
+        font-weight: 700;
+
+        color: #e5e5df;
+    }
+
+    .achievement-icon {
+        min-width: 60px;
+        height: 60px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 15px;
+
+        background: var(--dark);
+        font-size: 25px;
+
+        position: relative;
+        z-index: 2;
+    }
+
+    .achievement-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .achievement-type {
+        font-size: 10px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        color: #8db82c;
+    }
+
+    .achievement-content h3 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 22px;
+        margin: 7px 0;
+    }
+
+    .achievement-content p {
+        color: #777;
+        font-size: 13px;
+        max-width: 400px;
+    }
+
+    .achievement-date {
+        display: inline-block;
+        margin-top: 12px;
+
+        padding: 5px 12px;
+
+        border-radius: 20px;
+
+        background: white;
+        color: #777;
+
+        font-size: 11px;
     }
 
     .skills-grid,
